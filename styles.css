@@ -34,6 +34,7 @@ h1,h2,h3{font-family:var(--font-head);font-weight:700;letter-spacing:-.01em}
 .tt-brand-ic{width:126px;height:auto;border-radius:9px;display:block}
 .tt-nav{display:flex;align-items:center;gap:0;margin-left:auto;flex-wrap:nowrap}
 .tt-nav-item{position:relative}
+.tt-nav-item:after{content:"";position:absolute;left:0;right:0;top:100%;height:14px}
 .tt-nav-link{display:inline-flex;align-items:center;gap:4px;font-size:11.6px;font-weight:600;color:#E2E6ED;padding:8px 7px;border-radius:99px;border:0;background:transparent;font-family:var(--font-body);cursor:pointer;white-space:nowrap}
 a.tt-nav-link{padding:7px 7px}
 .tt-nav-link:hover,.tt-nav-item.open .tt-nav-link{color:#fff;background:rgba(78,169,22,.22)}
@@ -303,6 +304,7 @@ details[open] .tt-faq-ic:after{transform:translate(-50%,-50%) scaleY(0)}
 .tt-model-card:hover{box-shadow:var(--shadow)}
 .tt-model-card-link{display:flex;flex-direction:column;gap:10px;align-items:flex-start;width:100%}
 .tt-model-card h3{margin:0;font-size:14.5px;color:var(--ink);font-weight:700;line-height:1.3;min-height:37px}
+.tt-model-card-desc{margin:-4px 0 0;font-size:12.5px;line-height:1.4;color:var(--muted);min-height:34px}
 .tt-model-price{font-size:17px;font-weight:800;color:var(--green-2);font-family:var(--font-head)}
 .tt-btn-sm{display:inline-flex;align-items:center;justify-content:center;text-align:center;min-height:38px;padding:0 10px;border-radius:99px;font-size:12px;font-weight:800;line-height:1.2;width:100%}
 .tt-btn-sm-outline{background:var(--paper-alt);border:1px solid var(--line);color:var(--ink)}
