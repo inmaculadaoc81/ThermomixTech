@@ -96,7 +96,7 @@ a.tt-nav-link{padding:7px 7px}
 .tt-info-card-head{display:flex;justify-content:space-between;align-items:center;gap:10px;font-family:var(--font-head);font-size:18px;font-weight:700;padding-bottom:12px;color:#fff}
 .tt-info-badge{font-size:11px;font-family:var(--font-body);background:var(--green);color:#fff;padding:5px 13px;align-self:center;font-weight:700;border-radius:99px}
 .tt-info-row{display:grid;grid-template-columns:34px 1fr;gap:12px;padding:12px 0;border-top:1px dashed rgba(255,255,255,.14)}
-.tt-info-ic{width:32px;height:32px;border-radius:50%;display:grid;place-items:center;background:rgba(78,169,22,.2);border:1px solid rgba(78,169,22,.32);color:var(--green-light);font-weight:800;font-size:14px}
+.tt-info-row .tt-info-ic{width:32px;height:32px;border-radius:50%;display:grid;place-items:center;background:rgba(78,169,22,.2);border:1px solid rgba(78,169,22,.32);color:var(--green-light);font-weight:800;font-size:14px}
 .tt-info-row strong{font-size:12.5px;color:var(--green-light);display:block}
 .tt-info-row span{font-size:12.5px;display:block;color:#C7CDD8}
 .tt-info-row small{font-size:11.5px;color:#8890A0}
