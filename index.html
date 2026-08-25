@@ -18,15 +18,17 @@
 <header class="header">
 <div class="wrap nav">
   <a href="#inicio"><img class="logo" src="/assets/logo-thermomixtech.png" alt="ThermomixTech"></a>
-  <nav class="links">
+  <nav class="links" id="mainMenu">
     <a href="#modelos">Modelos</a>
     <a href="#problemas">Qué le pasa</a>
     <a href="#rapidez">Reparación rápida</a>
     <a href="#recogida">Recogida</a>
     <a href="#cita">Pedir cita</a>
+    <a href="#sobre-thermomix">Guía</a>
     <a href="#contacto">Contacto</a>
     <a class="navcall" href="tel:+34910052489">Atención Telefónica 24 horas 365 días</a>
   </nav>
+  <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainMenu">Menú</button>
 </div>
 </header>
 
@@ -188,6 +190,23 @@
 </div>
 </section>
 
+<section class="seo-content" id="sobre-thermomix">
+<div class="wrap">
+  <div class="kicker">Servicio técnico Thermomix en Madrid</div>
+  <h2 class="title">Por qué una avería en Thermomix no siempre significa cambiar de robot</h2>
+
+  <div class="seo-text">
+    <p>La Thermomix combina motor, sistema de calentamiento, báscula de precisión, cuchillas y una interfaz electrónica en un mismo equipo. Esa complejidad hace que un mismo síntoma —por ejemplo, que no caliente— pueda deberse a causas muy distintas: el sensor de temperatura, la resistencia, la placa electrónica o incluso un fallo de software. Sustituir piezas sin confirmar antes el origen real suele salir más caro que hacer un diagnóstico correcto desde el principio.</p>
+
+    <p>En <strong>ThermomixTech</strong> trabajamos con TM21, TM31, TM5 y TM6; en TM7 el servicio se limita al cambio de cuchilla, ya que no ofrecemos otras intervenciones en ese modelo. El diagnóstico es gratuito y, según la avería detectada, algunas reparaciones pueden resolverse en apenas 2 horas.</p>
+
+    <p>Si no puedes desplazarte, puedes solicitar recogida desde esta misma página. Indícanos el modelo, qué le ocurre y desde cuándo, y te explicamos las opciones antes de tocar nada.</p>
+
+    <p><small>ThermomixTech es un servicio técnico independiente. Thermomix es una marca registrada de su respectivo titular; no somos servicio técnico oficial de la marca.</small></p>
+  </div>
+</div>
+</section>
+
 <section class="faq">
 <div class="wrap">
   <div class="kicker">Preguntas frecuentes</div>
@@ -279,7 +298,7 @@ createChat({
  const apply=()=>{
    const root=document.querySelector('#n8n-chat'); if(!root)return;
    const t=root.querySelector('.chat-window-toggle,[class*="chat-window-toggle"]');
-   const w=root.querySelector('.chat-window,[class*="chat-window"]');
+   const w=root.querySelector('.chat-window:not([class*="toggle"]),[class*="chat-window"]:not([class*="toggle"])');
    const mobile=matchMedia('(max-width:600px)').matches;
 
    if(t){
@@ -287,6 +306,7 @@ createChat({
      t.style.setProperty('right',mobile?'16px':'22px','important');
      t.style.setProperty('bottom','96px','important');
      t.style.setProperty('z-index','10060','important');
+     t.style.setProperty('border','1px solid #fff','important');
    }
 
    if(w){
@@ -311,6 +331,17 @@ createChat({
  };
  boot();
 })();
+
+const menuBtn=document.getElementById('menuBtn');
+const mainMenu=document.getElementById('mainMenu');
+menuBtn?.addEventListener('click',()=>{
+  const open=mainMenu.classList.toggle('open');
+  menuBtn.setAttribute('aria-expanded',open?'true':'false');
+});
+mainMenu?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+  mainMenu.classList.remove('open');
+  menuBtn.setAttribute('aria-expanded','false');
+}));
 
 const form=document.getElementById('contact-form');
 const statusEl=document.getElementById('form-status');
