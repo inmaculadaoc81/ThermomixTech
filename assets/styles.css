@@ -25,7 +25,7 @@ a{text-decoration:none;color:inherit}
 .links{display:flex;gap:16px;align-items:center;font-size:13px;font-weight:850;color:#fff}
 .links a{white-space:nowrap}
 .links a:hover{color:#18240f}
-.navcall{padding:11px 16px;border-radius:999px;background:#fff;color:var(--green2)!important}
+.navcall{padding:11px 16px;border-radius:999px;background:#fff;color:var(--green2)!important;white-space:nowrap}
 .menu-btn{display:none;border:1px solid rgba(255,255,255,.4);background:transparent;color:#fff;border-radius:11px;padding:10px 14px;font-weight:900;font:inherit;cursor:pointer}
 
 /* Hero */
@@ -60,7 +60,7 @@ a{text-decoration:none;color:inherit}
 .hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.16fr .84fr;gap:52px;align-items:start}
 .eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--green2);font-size:12px;font-weight:950;letter-spacing:2px;text-transform:uppercase;margin-bottom:18px}
 .eyebrow::before{content:"";width:34px;height:4px;background:var(--green);border-radius:999px}
-h1{font-size:clamp(38px,4.25vw,56px);line-height:1.03;letter-spacing:-2px;margin:0 0 24px;max-width:800px;overflow-wrap:break-word}
+h1{font-size:clamp(46px,5.6vw,74px);line-height:1.04;letter-spacing:-2.2px;margin:0 0 24px;max-width:800px;overflow-wrap:break-word}
 .accent{color:var(--green2)}
 .badges-strip{padding:30px 0}
 .badges{display:flex;gap:10px;flex-wrap:wrap;margin:0}
@@ -179,7 +179,7 @@ footer{background:#18240f;color:#fff;padding:34px 0}
 @media(max-width:600px){
   .wrap{width:min(100% - 28px,1180px)}
   .hero{padding-top:46px}
-  h1{font-size:40px;letter-spacing:-1.5px}
+  h1{font-size:48px;letter-spacing:-1.5px}
   .model-grid,.problem-grid,.steps-grid,.ctas,form{grid-template-columns:1fr}
   .phone,.full{grid-column:auto}
   .hero::after,.hero-note{display:none}
