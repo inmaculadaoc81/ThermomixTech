@@ -99,3 +99,10 @@ REVISIÓN ADICIONAL (checklist unificado de la familia, a petición del cliente)
   WhatsApp. Añadido.
 - Formulario verificado: fetch a /api/contacto coincide con
   api/contacto.js; conexión correcta.
+
+REVISIÓN ADICIONAL (a petición del cliente):
+- Quitadas de la caja de información las filas "Servicio" y
+  "Diagnóstico" (ambas redundantes con lo ya mostrado en el hero, la
+  insignia "✓ Diagnóstico gratuito" y otras secciones de la página).
+- Quitada la etiqueta "TM21 · TM31 · TM5 · TM6 · TM7" (.hero-note)
+  del hero.
