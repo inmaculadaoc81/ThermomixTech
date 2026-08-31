@@ -77,3 +77,25 @@ REVISIÓN (fixes aplicados en esta pasada):
   Thermomix no funciona. Aquí la dejamos como nueva." Tamaño del H1
   aumentado: clamp(38-56px) → clamp(46-74px) en escritorio, 40px →
   48px en móvil.
+
+REVISIÓN ADICIONAL (checklist unificado de la familia, a petición del cliente):
+- H1 repetía la plantilla "no funciona. Aquí la dejamos como nueva."
+  Reescrito con síntoma específico: "Tu Thermomix no calienta o no
+  gira. La reparamos." (9 palabras).
+- BUG REAL — dos textos decorativos sin reducción de tamaño en móvil
+  (mismo patrón que MedionTech/AsusTech/BoschTech): ".models::after"
+  ("THERMOMIX", 165px) y ".fast-art::before" ("2 h", 160px), que en
+  pantallas pequeñas se verían enormes/cortados. Añadida reducción en
+  tablet (100px) y móvil (64px) para ambos.
+- El aviso de servicio independiente solo estaba en letra pequeña del
+  footer. Añadida la franja destacada bajo el menú, igual que en el
+  resto de la familia.
+- Añadido "Sábados, domingos y días festivos estamos cerrados" debajo
+  del horario.
+- Enlace de política de privacidad: la casilla existía pero sin
+  enlace. Añadido a https://kelatos.com/privacy-policy/, en azul y
+  subrayado.
+- Botón "Atención Telefónica..." sin icono, a diferencia del de
+  WhatsApp. Añadido.
+- Formulario verificado: fetch a /api/contacto coincide con
+  api/contacto.js; conexión correcta.
