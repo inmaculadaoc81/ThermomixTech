@@ -65,13 +65,15 @@ a{text-decoration:none;color:inherit}
 h1{font-size:clamp(46px,5.6vw,74px);line-height:1.04;letter-spacing:-2.2px;margin:0 0 24px;max-width:800px;overflow-wrap:break-word}
 .accent{color:var(--green2)}
 .badges-strip{padding:30px 0}
-.badges{display:flex;gap:10px;flex-wrap:wrap;margin:0}
-.badge{display:inline-flex;align-items:center;gap:9px;padding:11px 15px;border-radius:999px;background:#fff;border:1px solid var(--line);font-weight:900}
+.badges{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:0}
+.badge{display:flex;align-items:center;justify-content:center;text-align:center;gap:9px;padding:11px 15px;border-radius:999px;background:#fff;border:1px solid var(--line);font-weight:900}
 .badge strong{color:var(--green2)}
 .badge.fast{background:var(--deep);color:#fff;border-color:var(--deep)}
 .badge.fast strong{color:#b8e36c}
 .ctas{display:grid;grid-template-columns:1.18fr .82fr;gap:11px;max-width:790px}
-.cta{min-height:62px;display:flex;align-items:center;justify-content:center;text-align:center;padding:13px 17px;border-radius:16px;font-weight:900}
+.cta{min-height:62px;display:flex;align-items:center;justify-content:center;text-align:center;padding:13px 17px;border-radius:999px;font-weight:900;transition:filter .15s ease,background .15s ease,color .15s ease}
+.wa:hover,.pickup:hover{filter:brightness(.88)}
+.phone:hover{background:var(--deep);color:#fff}
 .cta svg{width:22px;height:22px;margin-right:8px;flex:0 0 22px}
 .wa{background:var(--wa);color:#fff}
 .pickup{background:var(--green2);color:#fff}
@@ -185,6 +187,7 @@ footer{background:#18240f;color:#fff;padding:34px 0}
   .hero{padding-top:46px}
   h1{font-size:48px;letter-spacing:-1.5px}
   .model-grid,.problem-grid,.steps-grid,.ctas,form{grid-template-columns:1fr}
+  .badges{grid-template-columns:repeat(2,1fr)}
   .phone,.full{grid-column:auto}
   .hero::after,.hero-note{display:none}
   .models::after{font-size:64px;bottom:-20px}

@@ -106,3 +106,25 @@ REVISIÓN ADICIONAL (a petición del cliente):
   insignia "✓ Diagnóstico gratuito" y otras secciones de la página).
 - Quitada la etiqueta "TM21 · TM31 · TM5 · TM6 · TM7" (.hero-note)
   del hero.
+
+REVISIÓN ADICIONAL (checklist unificado de la familia, a petición del cliente — repo 21/48):
+- BUG REAL — enlace de Cal.com desactualizado. Actualizado a
+  https://cal.com/kelatos/30min?embed=true&theme=light&attendeePhoneNumber=%2B34&overlayCalendar=true.
+- Verificado: el correo soporte@kelatos.com no aparece visible.
+- BUG REAL — el mensaje prellenado de WhatsApp decía "¡Hola Kelatos!".
+  Corregido a "¡Hola ThermomixTech!".
+- Verificado: el menú móvil ya se cerraba correctamente al pulsar un
+  enlace.
+- Verificado: sin iconos ni imágenes con proporciones fijas
+  incorrectas.
+- Verificado: el H1 en móvil ya está en 48px.
+- BUG REAL — botones del hero (.cta) con border-radius de 16px y sin
+  estado hover. Aumentado a border-radius:999px; añadido
+  filter:brightness(.88) en wa/pickup (colores sólidos) y relleno
+  sólido con var(--deep) + texto blanco en el botón de teléfono
+  (estilo contorno) al pasar el ratón.
+- Verificado: la franja de insignias (.badges-strip) ya estaba
+  correctamente ubicada fuera del hero, debajo de él. Cambiado su
+  layout de flex-wrap a grid de 4 columnas en escritorio y 2 en móvil
+  (mismo patrón aplicado en DyFix/DysonValladolid), en vez de dejar
+  las píldoras envolver libremente.
