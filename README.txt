@@ -128,3 +128,14 @@ REVISIÓN ADICIONAL (checklist unificado de la familia, a petición del cliente 
   layout de flex-wrap a grid de 4 columnas en escritorio y 2 en móvil
   (mismo patrón aplicado en DyFix/DysonValladolid), en vez de dejar
   las píldoras envolver libremente.
+
+REVISIÓN ADICIONAL (nueva regla de menú móvil, a petición del cliente):
+- BUG REAL — la franja de aviso de independencia estaba dentro de
+  <header>. Movida fuera de <header>, como hermana justo después de
+  él y antes del hero: sigue siendo la misma franja amarilla de ancho
+  completo.
+- Verificado: el header (.header{position:sticky;top:0}) ya se
+  mantenía fijo/pegado arriba al hacer scroll; no requería cambios.
+- Verificado de nuevo: el checklist de 7 puntos y la franja de
+  insignias reubicada ya estaban aplicados de pasadas anteriores; no
+  requerían cambios.
