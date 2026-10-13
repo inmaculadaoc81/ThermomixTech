@@ -75,7 +75,7 @@ h1{font-size:clamp(46px,5.6vw,74px);line-height:1.04;letter-spacing:-2.2px;margi
 .wa:hover,.pickup:hover{filter:brightness(.88)}
 .phone:hover{background:var(--deep);color:#fff}
 .cta svg{width:22px;height:22px;margin-right:8px;flex:0 0 22px}
-.wa{background:var(--wa);color:#fff}.quote{background:#17a398;color:#fff}
+.wa{background:var(--wa);color:#fff}.quote{background:#17a398;color:#fff;grid-column:1/-1}
 .pickup{background:var(--green2);color:#fff}
 .phone{grid-column:1/-1;border:2px solid var(--deep);background:#fff;color:var(--deep)}
 
@@ -219,3 +219,4 @@ footer{background:#18240f;color:#fff;padding:34px 0}
 .servicio-precio.consultar{font-size:15px;font-weight:800;color:var(--muted)}
 .servicios-vacio{color:var(--muted);margin-top:26px}
 @media(max-width:900px){.servicios-lista{grid-template-columns:1fr}}
+.quote:hover{filter:brightness(.88)}
